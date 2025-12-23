@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Manager</title>
+  <!--css-->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Personal Finance Manager</h1>
+
+    <!--Balance section-->
+    <div class="balance-card">
+      <h2>Your Balance</h2>
+      <p id="balance">0</p>
+
+      <div class="summary">
+        <div class="income">
+          <h3>Income</h3>
+          <p id="income">0</p>
+        </div>
+        <div class="expence">
+          <h3>Expence</h3>
+          <p id="expence">0</p>
+        </div>
+      </div>
+    </div>
+      <!--Add Transaction-->
+      <div class="transaction-form">
+        <h2>Add transaction</h2>
+
+        <!--form-->
+
+        <form>
+          <input type="text" placeholder="Description" required>
+          <input type="number" placeholder="Amount" required>
+
+          <select required>
+            <option value="">Select Type</option>
+            <option value="income">Income</option>
+            <option value="expence">Expence</option>
+          </select>
+          <select required>
+            <option value="">Select Category</option>
+            <option>Food</option>
+            <option>Rent</option>
+            <option>Travel</option>
+            <option>Other</option>
+          </select>
+          
+          <button type="submit">Add Transaction</button>
+        </form>
+      </div>
+
+      <!--Transaction List-->
+
+      <div class="transaction-list">
+        <h2>Transactions</h2>
+        <ul>
+          <!-- Transaction will appear here-->
+        </ul>
+      </div>
+  </div>
+  <!--Javascript-->
+  <script src="js/app.js"></script>
+</body>
+</html>
