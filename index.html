@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Manager</title>
+  <!--css-->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Personal Finance Manager</h1>
+
+    <!--Balance section-->
+    <div class="balance-card">
+      <h2>Your Balance</h2>
+      <p id="balance">0</p>
+
+      <div class="summary">
+        <div class="income">
+          <h3>Income</h3>
+          <p id="income">0</p>
+        </div>
+        <div class="expense">
+          <h3>Expence</h3>
+          <p id="expense">0</p>
+        </div>
+      </div>
+    </div>
+     <!--add category total-->
+
+    <div class="category-summary">
+  <h3>Category Summary</h3>
+  <p>Food: ₹<span id="food-total">0</span></p>
+  <p>Rent: ₹<span id="rent-total">0</span></p>
+  <p>Travel: ₹<span id="travel-total">0</span></p>
+  <p>Other: ₹<span id="other-total">0</span></p>
+</div>
+
+      <!--Add Transaction-->
+      <div class="transaction-form">
+        <h2>Add transaction</h2>
+
+        <!--form-->
+
+        <form id="transactionForm">
+          <input type="text"  id="description"
+          placeholder="Description" required>
+          <input type="number" id="amount" placeholder="Amount"  required>
+
+          <select id="type" required>
+            <option value="">Select Type</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+          <select id="category" required>
+            <option value="">Select Category</option>
+            <option>Food</option>
+            <option>Rent</option>
+            <option>Travel</option>
+            <option>Other</option>
+          </select>
+          
+          <button type="submit">Add Transaction</button>
+        </form>
+      </div>
+
+
+      <!--add filter button-->
+      <div class="filters">
+  <button data-filter="all">All</button>
+  <button data-filter="income">Income</button>
+  <button data-filter="expense">Expense</button>
+</div>
+
+
+      <!--Transaction List-->
+
+      <div class="transaction-list">
+        <h2>Transactions</h2>
+        <ul id="transactionList">
+          <!-- Transaction will appear here-->
+        </ul>
+      </div>
+  </div>
+  <!--Javascript-->
+  <script src="js/app.js"></script>
+</body>
+</html>

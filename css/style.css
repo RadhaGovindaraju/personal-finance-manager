@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1, h2 {
+     text-align: center;
+}
+
+.balance-card {
+  margin-bottom: 20px;
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.income {
+  color: green;
+}
+.expence {
+  color: red;
+}
+
+.transaction-form input, 
+.transaction-form select,
+.transaction-form button {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.transaction-list ul {
+   list-style: none;
+   padding: 0;
+}
+
+.transaction-list li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+.income {
+  color: green;
+}
+
+.expense {
+  color: red;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.filters button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.category-summary {
+  background: #f1f8e9;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.category-summary h3 {
+  text-align: center;
+  margin-bottom: 8px;
+}
